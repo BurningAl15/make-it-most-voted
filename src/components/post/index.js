@@ -6,9 +6,9 @@ const Post = ({ title, id, modifyData, description, url, writer_avatar_url, post
         <li className="post-element">
             <Image className="post-img" src={post_image_url} alt="Post" />
             <div className="post-buttons">
-                <Button onClick={() => modifyData(id, true)}>Up</Button>
+                <Button onClick={() => modifyData(id, true)}>+</Button>
                 <p>{votes}</p>
-                <Button onClick={() => modifyData(id, false)}>Down</Button>
+                <Button onClick={() => modifyData(id, false)}>-</Button>
             </div>
             <div className="post-info">
                 <a href={url} className="post-title">{title}</a>
